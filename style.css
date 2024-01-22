@@ -37,12 +37,22 @@ nav a:hover{
     text-decoration: underline;
 }
 
+/*
+*/
 .productos{
     width: 940px;
     margin: 0 auto;
     padding: 50px;
 }
 
+/*
+.lista-productos sustituye a productos cuando se hicieron prubas en celular
+.lista-productos{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+*/
 
 .productos li{
     display: inline-block;
@@ -135,7 +145,7 @@ form label, form legend{
 }
 
 table{
-    margin: 40px 40px;
+    margin: 40px 25%;
 }
 
 thead{
@@ -228,6 +238,11 @@ img ~ p{
     margin: 0 auto;
 }
 
+.tabla-horarios{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888)
+}
+
 .diferenciales{
     padding: 3em 0;
     background: #888888;
@@ -289,11 +304,25 @@ img ~ p{
         position: static;
     }
 
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+    .caja, .principal, .mapa-contenido, 
+    .contenido-diferenciales, .video{
         width: auto;
     }
 
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
     }
-}
+
+    .productos{
+        width: auto;
+    }
+
+    .productos li{
+        display: inline;
+        text-align: center;
+        vertical-align: top;
+        margin: 0 1.5%;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    }
